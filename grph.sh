@@ -1,4 +1,4 @@
-rm xa*
+# rm x*
 split -p '^>' ~/Downloads/rosalind_grph.txt
 
 for i in $(ls x*); do
