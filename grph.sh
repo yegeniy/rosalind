@@ -7,6 +7,7 @@ for i in $(ls x*); do
     # TODO: Might speed it up by saving just the suffix and prefix to a file
     # Would need to also do a check for s != t, but at least could 
     # avoid processing O(n^2)-ish times. 2*n I guess?
+    # Only need to do a check that s!=t if suffix == prefix
     # echo -e `head -n 1 $i`"\n"`tail -n +2 $i | paste -s -d \0 - | rev | cut -c 1-3 | rev`
     # echo "$sl($i)": $s
     for j in $(ls x*); do
